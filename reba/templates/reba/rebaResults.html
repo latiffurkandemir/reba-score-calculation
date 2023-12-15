@@ -1,0 +1,6 @@
+{% extends "reba/base.html" %}
+{% block content %}
+<p class="h2">Final REBA score: {{ final_score }}</h1>
+<p>Results are: {{ result_text }}</p>
+<a href="{% url 'export_users_xls' %}">Export Data</a>
+{% endblock content %}

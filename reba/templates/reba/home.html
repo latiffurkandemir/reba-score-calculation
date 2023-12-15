@@ -1,0 +1,47 @@
+{% extends "reba/base.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>last</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+  <section class="py-4 py-xl-5">
+    <div class="container">
+      <div class="text-center p-4 p-lg-5">
+        <h1 class="fw-bold mb-4">Rapid Entire Body Assesment (REBA)</h1>
+        <p class="fw-bold text-primary mb-2"
+          style="margin-top: 15px;padding-top: 0px;font-size: 28px;padding-bottom: 64px;"><span
+            style="font-weight: normal !important; color: rgb(0, 0, 0);">Do you suffer from neck pain in your workplace?
+             Try ergonomics</span></p>
+        <button class="btn btn-primary fs-5 me-2 py-2 px-4" type="button"
+          style="padding-bottom: 11px;margin-bottom: 0px;" onclick="redirectToPage1()">Start the assesment with
+          observing a video</button>
+        <button class="btn btn-light fs-5 py-2 px-4" type="button"
+          style="width: 426.812px;margin-right: 8px;" onclick="redirectToPage2()">Start the
+          assesment without a video</button>
+      </div>
+    </div>
+  </section>
+  <script src="assets/bootstrap/js/bootstrap.min.js">
+  </script>
+  <script>
+    function redirectToPage1() {
+      window.location.href = "rebaWithVideo";
+    }
+
+    function redirectToPage2() {
+      window.location.href = "rebaWithoutVideo";
+    }
+  </script>
+
+</body>
+
+</html>
+{% endblock content %}
